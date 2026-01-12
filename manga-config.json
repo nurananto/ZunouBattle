@@ -1,0 +1,29 @@
+{
+  "type": "manga",
+  "title": "Ore wa Gakuen Zunou Battle no Enshutsuka!",
+  "alternativeTitle": "俺は学園頭脳バトルの演出家!",
+  "cover": "",
+  "description": "Di Akademi Teio, segalanya ditentukan lewat duel permainan. Yang harus kulakukan sebagai perwujudan karakter figuran, Tanaka Kanata, bukanlah meraih kejayaan untuk diriku sendiri! Satu-satunya tugasku adalah “menyutradarai” dari balik layar agar Kiriya, murid pindahan terkuat dari bawah, hingga mencapai puncak sebagai 'protagonis terkuat'!  …Seharusnya begitu, tapi entah sejak kapan aku sendiri malah ikut jadi pusat perhatian—ini maksudnya apa sih!? Komedi pertarungan akademi terkuat sepanjang sejarah karya dari orang yang mengaku-ngaku sebagai seorang 'sutradara' resmi dimulai!",
+  "author": "Hotori Katanuma",
+  "artist": "Hattori Masaki",
+  "genre": [
+    "Shounen",
+    "Comedy",
+    "Action",
+    "School Life",
+    "Psychological",
+    "Video Games"
+  ],
+  "status": "ONGOING",
+  "endChapter": null,
+  "views": 0,
+  "links": {
+    "mangadex": "https://mangadex.org/title/00fccb9d-c43b-4083-b68d-693f5501ea78/ore-wa-gakuen-zunou-battle-no-ensyutsuka-jishou-mob-ga-kage-kara-egaku-saikyou-shujinkou-musou",
+    "raw": "https://comic-gardo.com/episode/2551460909967440804"
+  },
+  "repoOwner": "nurananto",
+  "repoName": "ZunouBattle",
+  "imagePrefix": "Image",
+  "imageFormat": "webp",
+  "lockedChapters": []
+}

@@ -1,0 +1,82 @@
+name: Encrypt New Manifest
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**/manifest.json'
+  
+  workflow_dispatch:
+    inputs:
+      force_scan:
+        description: 'Force scan all manifests (ignore git diff)'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  encrypt-manifest:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch full history for better git diff
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: 🔐 Detect and Encrypt manifests
+        env:
+          SECRET_TOKEN: ${{ secrets.MANIFEST_SECRET_TOKEN }}
+          # Force scan if manual trigger with force_scan = true
+          FORCE_SCAN_ALL: ${{ github.event.inputs.force_scan == 'true' && 'true' || 'false' }}
+        run: |
+          if [ "$FORCE_SCAN_ALL" = "true" ]; then
+            echo "🔥 Force Mode: Will scan ALL manifests"
+          else
+            echo "🔍 Auto Mode: Will detect unencrypted manifests"
+          fi
+          node encrypt-manifest.js
+      
+      - name: 📝 Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "✅ No new manifests encrypted"
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "✅ Manifests encrypted!"
+            git status --short
+          fi
+        continue-on-error: true
+      
+      - name: 💾 Commit encrypted manifests
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git config --local user.name 'github-actions[bot]'
+          git config --local user.email 'github-actions[bot]@users.noreply.github.com'
+          
+          # Add only modified manifest.json files
+          find . -name "manifest.json" -type f | while read file; do
+            if git status --porcelain "$file" | grep -q "^.M\|^M"; then
+              git add "$file"
+              echo "✅ Added: $file"
+            fi
+          done
+          
+          # ✅ No [skip ci] so manga-automation.yml will trigger automatically
+          git commit -m "🔐 Encrypt new manifest"
+          git push origin main
+          
+          echo ""
+          echo "✅ Encrypted manifests pushed!"
+          echo "ℹ️  manga-automation.yml will run automatically"
+          echo "   (triggered by this commit to manifest.json)"
