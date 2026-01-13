@@ -25,5 +25,7 @@
   "repoName": "ZunouBattle",
   "imagePrefix": "Image",
   "imageFormat": "webp",
-  "lockedChapters": []
+  "lockedChapters": [
+    "2.3"
+  ]
 }
