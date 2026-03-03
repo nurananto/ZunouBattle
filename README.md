@@ -13,9 +13,7 @@
 | Author | Hotori Katanuma |
 | Artist | Hattori Masaki |
 | Tipe | Manga (Hitam Putih) |
-| Status | Ongoing |
 | Genre | Shounen · Comedy · Action · School Life · Psychological · Video Games |
-| Chapter | 7 chapter (2 locked) |
 
 ## Link
 
