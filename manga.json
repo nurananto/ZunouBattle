@@ -15,7 +15,7 @@
       "Video Games"
     ],
     "status": "ONGOING",
-    "views": 2425,
+    "views": 2507,
     "links": {
       "mangadex": "https://mangadex.org/title/00fccb9d-c43b-4083-b68d-693f5501ea78/ore-wa-gakuen-zunou-battle-no-ensyutsuka-jishou-mob-ga-kage-kara-egaku-saikyou-shujinkou-musou",
       "raw": "https://comic-gardo.com/episode/2551460909967440804"
@@ -37,7 +37,7 @@
       "totalPages": 47,
       "pages": 47,
       "locked": false,
-      "views": 295
+      "views": 301
     },
     "2.1": {
       "title": "Chapter 2.1",
@@ -47,7 +47,7 @@
       "totalPages": 14,
       "pages": 14,
       "locked": false,
-      "views": 249
+      "views": 254
     },
     "2.2": {
       "title": "Chapter 2.2",
@@ -57,7 +57,7 @@
       "totalPages": 12,
       "pages": 12,
       "locked": false,
-      "views": 418
+      "views": 425
     },
     "2.3": {
       "title": "Chapter 2.3",
@@ -67,7 +67,7 @@
       "totalPages": 10,
       "pages": 10,
       "locked": false,
-      "views": 665
+      "views": 676
     },
     "3.1": {
       "title": "Chapter 3.1",
@@ -77,7 +77,7 @@
       "totalPages": 16,
       "pages": 16,
       "locked": false,
-      "views": 427
+      "views": 443
     },
     "3.2": {
       "title": "Chapter 3.2",
@@ -87,7 +87,7 @@
       "totalPages": 16,
       "pages": 16,
       "locked": false,
-      "views": 127
+      "views": 148
     },
     "4.1": {
       "title": "Chapter 4.1",
@@ -97,9 +97,9 @@
       "totalPages": 10,
       "pages": 10,
       "locked": true,
-      "views": 34
+      "views": 35
     }
   },
-  "lastUpdated": "2026-03-04T17:20:59.332Z",
+  "lastUpdated": "2026-03-05T17:20:54.176Z",
   "lastChapterUpdate": "2026-02-25T21:44:45+07:00"
 }
