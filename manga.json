@@ -29,77 +29,17 @@
     "type": "manga"
   },
   "chapters": {
-    "1": {
-      "title": "Chapter 1",
-      "chapter": 1,
-      "folder": "1",
-      "uploadDate": "2026-01-12T21:57:50+07:00",
-      "totalPages": 47,
-      "pages": 47,
-      "locked": false,
-      "views": 318
-    },
-    "2.1": {
-      "title": "Chapter 2.1",
-      "chapter": 2.1,
-      "folder": "2.1",
-      "uploadDate": "2026-01-13T20:14:47+07:00",
-      "totalPages": 14,
-      "pages": 14,
-      "locked": false,
-      "views": 269
-    },
-    "2.2": {
-      "title": "Chapter 2.2",
-      "chapter": 2.2,
-      "folder": "2.2",
-      "uploadDate": "2026-01-13T21:25:21+07:00",
-      "totalPages": 12,
-      "pages": 12,
-      "locked": false,
-      "views": 441
-    },
-    "2.3": {
-      "title": "Chapter 2.3",
-      "chapter": 2.3,
-      "folder": "2.3",
-      "uploadDate": "2026-01-13T23:17:44+07:00",
-      "totalPages": 10,
-      "pages": 10,
-      "locked": false,
-      "views": 694
-    },
-    "3.1": {
-      "title": "Chapter 3.1",
-      "chapter": 3.1,
-      "folder": "3.1",
-      "uploadDate": "2026-01-28T18:50:40+07:00",
-      "totalPages": 16,
-      "pages": 16,
-      "locked": false,
-      "views": 473
-    },
-    "3.2": {
-      "title": "Chapter 3.2",
-      "chapter": 3.2,
-      "folder": "3.2",
-      "uploadDate": "2026-02-11T18:13:32+07:00",
-      "totalPages": 16,
-      "pages": 16,
-      "locked": false,
-      "views": 196
-    },
     "4.1": {
       "title": "Chapter 4.1",
       "chapter": 4.1,
       "folder": "4.1",
       "uploadDate": "2026-02-25T21:44:45+07:00",
-      "totalPages": 10,
-      "pages": 10,
+      "totalPages": 0,
+      "pages": 0,
       "locked": true,
       "views": 44
     }
   },
-  "lastUpdated": "2026-03-08T17:20:32.276Z",
+  "lastUpdated": "2026-03-09T20:01:31+07:00",
   "lastChapterUpdate": "2026-02-25T21:44:45+07:00"
 }
